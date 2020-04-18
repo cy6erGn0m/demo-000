@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<body>
+
+</body>
+    <p th:each="task : ${tasks}">
+        <span th:text="${task.getTitle()}"></span>
+    </p>
+</html>
